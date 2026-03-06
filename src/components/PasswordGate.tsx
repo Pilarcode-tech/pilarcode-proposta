@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { proposta } from "../data/proposta";
 
 export default function PasswordGate({ children }: { children: React.ReactNode }) {
-  const [autorizado, setAutorizado] = useState(() => {
-    if (typeof window !== "undefined") {
-      return sessionStorage.getItem("proposta_auth") === "true";
-    }
-    return false;
-  });
+  const [autorizado, setAutorizado] = useState(false);
+  const [carregando, setCarregando] = useState(true);
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState(false);
+
+  useEffect(() => {
+    if (sessionStorage.getItem("proposta_auth") === "true") {
+      setAutorizado(true);
+    }
+    setCarregando(false);
+  }, []);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -20,6 +23,12 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
     } else {
       setErro(true);
     }
+  }
+
+  if (carregando) {
+    return (
+      <div className="fixed inset-0 z-[100] bg-gradient-to-br from-blue-dark via-blue-primary to-blue-dark" />
+    );
   }
 
   if (autorizado) {
@@ -47,7 +56,7 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
         </div>
 
         {/* Card */}
-        <div className="bg-white/[0.06] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10">
+        <div className="w-full bg-white/[0.06] backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10">
           <div className="text-center mb-8">
             <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -73,7 +82,6 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
                   setErro(false);
                 }}
                 placeholder="Senha de acesso"
-                autoFocus
                 className="w-full bg-white/[0.08] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-white/30 text-base focus:outline-none focus:border-blue-light/50 focus:ring-1 focus:ring-blue-light/30 transition-all"
               />
               {erro && (
