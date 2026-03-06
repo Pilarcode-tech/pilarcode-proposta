@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-primary: #211cda;
+  --color-blue-light: #278deb;
+  --color-blue-dark: #060554;
+  --color-teal: #03515d;
+  --color-bg-light: #f8f9fc;
+
+  --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-manrope: "Manrope", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: var(--font-jakarta);
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-bg-light);
+  width: 100vw;
+  overflow-x: hidden;
+}

@@ -1,0 +1,73 @@
+---
+import "../styles/global.css";
+
+import Cover from "../components/Cover";
+import Objetivo from "../components/Objetivo";
+import Escopo from "../components/Escopo";
+import Tecnologia from "../components/Tecnologia";
+import CustosAWS from "../components/CustosAWS";
+import Cronograma from "../components/Cronograma";
+import Garantia from "../components/Garantia";
+import Manutencao from "../components/Manutencao";
+import Responsabilidades from "../components/Responsabilidades";
+import Confidencialidade from "../components/Confidencialidade";
+import SobreNos from "../components/SobreNos";
+import Investimento from "../components/Investimento";
+import Assinatura from "../components/Assinatura";
+import PasswordGate from "../components/PasswordGate";
+---
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Proposta Comercial — Prati-Donaduzzi | Pilarcode Tech</title>
+		<meta name="description" content="Proposta Comercial - Sistema de Cotação Automática de Fretes - Prati-Donaduzzi" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	</head>
+	<body class="bg-white">
+		<PasswordGate client:load>
+			<!-- Navbar — same pattern as LP -->
+			<header class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+				<div class="mx-auto xl:container w-full px-4 sm:px-6 lg:px-10">
+					<nav class="flex items-center justify-between py-4 gap-4 lg:gap-8">
+						<a href="/" class="flex items-center gap-2.5">
+							<img src="/icon.png" alt="Pilarcode" class="h-8 lg:h-10 w-auto shrink-0" />
+							<div class="flex flex-col leading-none">
+								<span class="font-bold text-[20px] lg:text-[24px] text-gray-900 tracking-tight leading-none">
+									pilarcode
+								</span>
+								<span class="font-semibold text-[7px] lg:text-[8px] text-blue-light tracking-wide uppercase leading-none mt-[6px]">
+									tech
+								</span>
+							</div>
+						</a>
+						<span class="font-manrope text-[10px] font-bold text-gray-400 uppercase tracking-[2px]">
+							Proposta Comercial
+						</span>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<Cover client:load />
+				<Objetivo />
+				<Escopo />
+				<Tecnologia />
+				<CustosAWS />
+				<Cronograma />
+				<Garantia />
+				<Manutencao />
+				<Responsabilidades />
+				<Confidencialidade />
+				<SobreNos />
+				<Investimento />
+				<Assinatura />
+			</main>
+		</PasswordGate>
+	</body>
+</html>
