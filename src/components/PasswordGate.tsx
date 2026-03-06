@@ -27,12 +27,12 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
   }
 
   return (
-    <div className="fixed inset-0 z-[100] bg-gradient-to-br from-blue-dark via-blue-primary to-blue-dark flex items-center justify-center px-6">
+    <div className="fixed inset-0 z-[100] bg-gradient-to-br from-blue-dark via-blue-primary to-blue-dark overflow-y-auto">
       {/* Orbs */}
       <div className="absolute top-[-120px] right-[-100px] w-[500px] h-[500px] bg-blue-light rounded-full blur-[150px] opacity-[0.08] pointer-events-none" />
       <div className="absolute bottom-[10%] left-[-80px] w-[400px] h-[400px] bg-blue-light rounded-full blur-[140px] opacity-[0.06] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-md">
+      <div className="relative z-10 w-full max-w-md mx-auto px-6 py-16 min-h-[100dvh] flex flex-col items-center justify-center">
         {/* Logo */}
         <div className="flex items-center justify-center gap-2.5 mb-10">
           <img src="/icon.png" alt="Pilarcode" className="h-10 w-auto" />
@@ -74,7 +74,7 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
                 }}
                 placeholder="Senha de acesso"
                 autoFocus
-                className="w-full bg-white/[0.08] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-white/30 text-sm focus:outline-none focus:border-blue-light/50 focus:ring-1 focus:ring-blue-light/30 transition-all"
+                className="w-full bg-white/[0.08] border border-white/10 rounded-xl px-4 py-3.5 text-white placeholder-white/30 text-base focus:outline-none focus:border-blue-light/50 focus:ring-1 focus:ring-blue-light/30 transition-all"
               />
               {erro && (
                 <p className="text-red-400 text-xs mt-2">

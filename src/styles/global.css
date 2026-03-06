@@ -25,6 +25,5 @@ body {
   font-family: var(--font-jakarta);
   -webkit-font-smoothing: antialiased;
   background: var(--color-bg-light);
-  width: 100vw;
   overflow-x: hidden;
 }
