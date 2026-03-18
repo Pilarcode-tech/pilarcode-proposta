@@ -9,7 +9,7 @@ export const proposta = {
   prazo: "10 semanas",
   senha: "prati2026",
   investimento: "R$ 45.000,00",
-  manutencao: "R$ 1.500",
+  manutencao: "R$ 2.500",
 
   objetivo: {
     texto1:
