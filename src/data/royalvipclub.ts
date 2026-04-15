@@ -7,14 +7,14 @@ export const royalvipclub = {
   clienteCurto: "Mainstream",
   emissao: "Abril / 2026",
   validade: "30 dias",
-  prazo: "5 semanas",
+  prazo: "6 semanas",
   senha: "royalvip2026",
 
   meta: [
     { label: "Preparado para", valor: "Mainstream Consultoria de Esportes Eletrônicos" },
     { label: "Divisão", valor: "Pilarcode" },
     { label: "Data", valor: "Abril 2026" },
-    { label: "Prazo de Entrega", valor: "5 semanas" },
+    { label: "Prazo de Entrega", valor: "6 semanas + 60 dias de suporte" },
   ],
 
   contexto: {
@@ -120,22 +120,25 @@ export const royalvipclub = {
     {
       numero: "3",
       titulo: "Gamificação: Elos, Torneios, Caixa VIP e Álbum",
-      duracao: "Semana 3",
+      duracao: "Semanas 3–4",
       desc: "Módulos de gamificação com maior densidade visual: elos com progressão, torneios com ranking em tempo real, Caixa VIP com animação de abertura, e álbum de figurinhas com troca entre usuários. Animações, micro-interações e dois layouts por módulo.",
     },
     {
       numero: "4",
       titulo: "Avatar 2D, Cassinos, Loja e Social",
-      duracao: "Semana 4",
+      duracao: "Semana 5",
       desc: "Sistema de avatar animado com composição de layers e idle animations, telas de Mundo dos Cassinos, Loja VIP com economia de pontos, feed Social e sistema de Sorteios. Tudo nas versões mobile e desktop.",
     },
     {
       numero: "5",
       titulo: "Integração Final, QA e Entrega",
-      duracao: "Semana 5",
+      duracao: "Semana 6",
       desc: "Integração completa de todos os módulos com as APIs do backend, QA visual (pixel-perfect vs Figma em ambos os formatos), ajustes de responsividade, otimização de performance, testes end-to-end e entrega final do projeto.",
     },
   ],
+
+  metodologiaDescricao:
+    "O desenvolvimento frontend é conduzido em 5 fases ao longo de 6 semanas, seguidas de 60 dias de suporte técnico pós-entrega. A cada fase entregamos telas funcionais conectadas ao backend, que vocês podem testar e validar antes de avançarmos.",
 
   entregaveis: [
     {
@@ -166,18 +169,63 @@ export const royalvipclub = {
       titulo: "Código-fonte Organizado",
       desc: "Todo o código frontend entregue em repositório Git, com estrutura de pastas clara, componentes documentados e pronto para manutenção.",
     },
+    {
+      titulo: "60 Dias de Suporte Pós-Entrega",
+      desc: "Correção de bugs, ajustes visuais pontuais e suporte técnico por 60 dias corridos após a entrega final. Cobre exclusivamente defeitos no que foi entregue, não funcionalidades ou telas novas.",
+    },
   ],
 
+  blindagemEscopo: {
+    titulo: "Importante: blindagem de escopo",
+    texto:
+      'Esta proposta cobre exclusivamente os 13 módulos mapeados no Figma (página "Mobile Version Final") nas versões mobile e desktop. Qualquer tela, módulo ou funcionalidade adicional fora do design atual será orçado separadamente mediante novo acordo.',
+  },
+
   investimento: {
-    valor: "R$ 30.000",
-    descricao: "Valor total do projeto — frontend mobile + desktop",
+    valorOriginal: "R$ 30.000",
+    valor: "R$ 24.000",
+    descontoTexto: "20% de desconto aplicado",
+    descricao:
+      "Valor com desconto — frontend mobile + desktop + 60 dias de suporte",
     justificativa:
-      "O valor foi calculado com base na complexidade visual mapeada no Figma: 13 módulos com múltiplas telas e modais (incluindo sistema de avatar 2D animado), cada um com layout mobile e desktop dedicado, 7 módulos de alta complexidade visual (animações, gamificação, avatar com sprites, rankings em tempo real), e integração com APIs do backend existente. Prazo de entrega: 5 semanas de desenvolvimento frontend dedicado.",
+      "O valor foi calculado com base na complexidade visual mapeada no Figma: 13 módulos com múltiplas telas e modais (incluindo sistema de avatar 2D animado), cada um com layout mobile e desktop dedicado, 7 módulos de alta complexidade visual (animações, gamificação, avatar com sprites, rankings em tempo real), e integração com APIs do backend existente. Prazo de entrega: 6 semanas de desenvolvimento frontend.",
     pagamento: {
-      titulo: "2x de R$ 15.000",
+      titulo: "2x de R$ 12.000",
       desc: "50% na assinatura do contrato + 50% na entrega final",
     },
+    fidelidade: {
+      titulo: "Condição especial para redesign futuro",
+      texto:
+        "Quando a Mainstream optar por refazer o layout da plataforma, a Pilarcode oferece condições diferenciadas para o novo desenvolvimento, com desconto de fidelidade sobre a tabela vigente e prioridade no cronograma. Essa condição é válida por 12 meses após a entrega deste projeto.",
+    },
   },
+
+  beneficios: [
+    {
+      icone: "shield",
+      titulo: "60 Dias de Suporte Pós-Entrega",
+      desc: "Correção de bugs, ajustes visuais pontuais e suporte técnico por 60 dias corridos após a entrega final. Cobre exclusivamente defeitos no que foi entregue, garantindo tranquilidade total no lançamento.",
+      tag: "Incluso",
+    },
+    {
+      icone: "compass",
+      titulo: "Consultoria Técnica no Kick-off",
+      desc: "Sessão de 1 a 2 horas com o time de backend da Mainstream para alinhar a estrutura ideal das APIs, formatos de resposta e padrões de autenticação. Evita retrabalho dos dois lados e acelera a integração.",
+      tag: "Incluso",
+    },
+    {
+      icone: "palette",
+      titulo: "1 Rodada de Ajustes Visuais",
+      desc: "Além da correção de bugs, inclui uma rodada completa de ajustes visuais pós-entrega: espaçamentos, cores, pequenas alterações de layout que não mudam o escopo. Vocês pedem, a gente ajusta.",
+      tag: "Incluso",
+    },
+    {
+      icone: "discount",
+      titulo: "15% de Desconto no Redesign Futuro",
+      desc: "Quando a Mainstream decidir refazer o layout da plataforma, a Pilarcode garante 15% de desconto sobre a tabela vigente e prioridade no cronograma. Condição válida por 12 meses após a entrega deste projeto.",
+      tag: "Garantido",
+    },
+  ],
 
   premissas: [
     {

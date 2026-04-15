@@ -8,7 +8,7 @@ export default function Fases() {
         <SectionHeader
           label="Metodologia"
           title="Como vamos trabalhar juntos"
-          description="O desenvolvimento frontend é conduzido em 5 fases incrementais ao longo de 5 semanas. A cada fase entregamos telas funcionais conectadas ao backend, que vocês podem testar e validar antes de avançarmos."
+          description={royalvipclub.metodologiaDescricao}
         />
 
         <div className="space-y-5">

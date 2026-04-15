@@ -14,7 +14,7 @@ export default function SectionHeader({ label, title, description }: Props) {
         {title}
       </h2>
       {description && (
-        <p className="text-base md:text-lg text-gray-500 leading-relaxed mt-4 max-w-2xl">
+        <p className="text-base md:text-lg text-gray-500 leading-relaxed mt-4">
           {description}
         </p>
       )}

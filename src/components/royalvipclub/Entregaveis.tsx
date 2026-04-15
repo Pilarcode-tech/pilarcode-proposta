@@ -8,7 +8,7 @@ export default function Entregaveis() {
         <SectionHeader
           label="Entregáveis"
           title="O que vocês vão receber"
-          description="Sete entregas concretas ao longo das 5 semanas de desenvolvimento."
+          description="Oito entregas concretas ao longo das 6 semanas de desenvolvimento e dos 60 dias de suporte pós-entrega."
         />
 
         <div className="space-y-3">
@@ -28,6 +28,16 @@ export default function Entregaveis() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Blindagem de escopo */}
+        <div className="mt-6 border border-dashed border-blue-light/40 rounded-2xl p-5 md:p-6 bg-blue-light/[0.03]">
+          <p className="font-manrope text-[11px] font-bold text-blue-primary uppercase tracking-[1.5px] mb-2">
+            {royalvipclub.blindagemEscopo.titulo}
+          </p>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {royalvipclub.blindagemEscopo.texto}
+          </p>
         </div>
       </div>
     </section>
