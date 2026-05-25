@@ -4,13 +4,13 @@ export default function Modulos() {
   const fasesAbertas = sucalog.fases.filter((f) => !f.incluida);
 
   const pagamento = [
-    { pct: "40%", etapa: "Assinatura do aditivo", valor: "R$ 16.800" },
-    { pct: "20%", etapa: "Entrega Fase 3", valor: "R$ 8.400" },
-    { pct: "20%", etapa: "Entrega Fase 4", valor: "R$ 8.400" },
-    { pct: "20%", etapa: "Entrega Fase 5", valor: "R$ 8.400" },
+    { pct: "40%", etapa: "Assinatura do aditivo", valor: "R$ 17.600" },
+    { pct: "20%", etapa: "Entrega Fase 3", valor: "R$ 8.800" },
+    { pct: "20%", etapa: "Entrega Fase 4", valor: "R$ 8.800" },
+    { pct: "20%", etapa: "Entrega Fase 5", valor: "R$ 8.800" },
   ];
 
-  const valorTotal = "R$ 42.000";
+  const valorTotal = "R$ 44.000";
 
   const mensalidade = {
     atual: "R$ 1.900",
@@ -199,7 +199,7 @@ export default function Modulos() {
 
           <p className="text-xs text-gray-400 mt-6 text-center max-w-xl mx-auto leading-relaxed">
             Soma dos valores individuais das três fases (R$ 14.000 + R$
-            16.000 + R$ 12.000). Pagamento conforme tabela acima, com
+            16.000 + R$ 14.000). Pagamento conforme tabela acima, com
             assinatura, marcos de entrega e nota fiscal por etapa.
           </p>
         </div>

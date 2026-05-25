@@ -195,7 +195,8 @@ export const sucalog = {
         "Linha do tempo do colaborador: histórico completo de movimentações, promoções, salários e documentos",
         "Repositório de documentos acessível pelo portal com assinatura digital",
         "Controle de EPI por colaborador e função",
-        "Gestão de contratos terceiros: renovação, pagamentos mensais, alertas de vencimento",
+        "Cadastro e administração de prestadores de serviço: empresas e pessoas físicas que atuam nas dependências do grupo, com registro do escopo do serviço, documentação obrigatória (ASO, NRs aplicáveis, contratos, comprovantes), alertas de pendências antes da entrada e histórico por unidade",
+        "Gestão de contratos terceiros: renovação, pagamentos mensais e alertas de vencimento",
         "Repositório de documentação ocupacional (PCMSO, PGR, Laudos) com alertas de renovação por empresa e função",
         "Controle de Processos Trabalhistas: quantidade, tempo de finalização e % por headcount por unidade",
         "Checklist operacional: admissão, demissão, afastamentos com etapas e responsáveis",
@@ -210,8 +211,6 @@ export const sucalog = {
     "Gestão de Afastamentos (LIMBO/CCT)",
     "Integração Gupy: pré-cadastro automático",
     "Comunicados Internos com vídeo",
-    "Controle de MEI e Prestadores",
-    "Propriedade Rural (José Maria Gomes)",
   ],
 
   entregaveis: [
@@ -261,7 +260,7 @@ export const sucalog = {
       {
         nome: "Fase 5",
         titulo: "Saúde Ocupacional e Documentação",
-        valor: "≈ R$ 12.000",
+        valor: "≈ R$ 14.000",
         prazo: "4 semanas",
       },
     ],
