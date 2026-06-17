@@ -7,7 +7,7 @@ export const highclass = {
   clienteCurto: "High Class",
   emissao: "Junho / 2026",
   validade: "30 dias",
-  prazo: "4 a 8 semanas a partir da assinatura",
+  prazo: "6 a 8 semanas a partir da assinatura",
   senha: "highclass2026",
 
   meta: [
@@ -16,7 +16,7 @@ export const highclass = {
     { label: "Data", valor: "Junho 2026" },
     {
       label: "Prazo de Entrega",
-      valor: "4 a 8 semanas a partir da assinatura",
+      valor: "6 a 8 semanas a partir da assinatura",
     },
   ],
 
@@ -48,7 +48,7 @@ export const highclass = {
     {
       numero: "2",
       titulo: "Construção do núcleo",
-      duracao: "2 a 5 semanas",
+      duracao: "4 a 5 semanas",
       desc: "Desenvolvemos os cadastros de passageiro, motorista, rota e veículo, o motor de indicação por link, o orçamento, o pagamento online e o contrato digital. Vocês acompanham o avanço toda semana e validam cada parte funcionando.",
     },
     {
@@ -104,7 +104,7 @@ export const highclass = {
   investimento: {
     valor: "R$ 18.000",
     descricao:
-      "Setup do projeto, da Fase 1 à Fase 3, pago em 3 parcelas de R$ 6.000: entrada na assinatura, segunda parcela no meio do projeto e terceira na entrega.",
+      "Setup do projeto, da Fase 1 à Fase 3, pago em 3 parcelas de R$ 6.000: entrada na assinatura, segunda parcela ao atingir o marco do núcleo (cadastro de passageiro e motorista funcionando) e terceira na entrega.",
     justificativa:
       "O valor cobre as três fases do projeto: a imersão e o desenho a partir da planilha que vocês já usam, a construção do núcleo (cadastros de passageiro, motorista, rota e veículo, indicação por link, orçamento, pagamento online e contrato digital) e a entrega, com a ponte da associação, a migração dos dados da planilha atual, os ajustes finais, o go-live e o treinamento da equipe. O trabalho começa na semana seguinte à assinatura. O controle de embarque e o rastreamento do veículo ficam como fases futuras, orçadas à parte depois que este núcleo estiver rodando.",
     parcelas: [
@@ -115,8 +115,8 @@ export const highclass = {
       },
       {
         percentual: "2ª",
-        titulo: "No meio do projeto",
-        desc: "R$ 6.000, com o núcleo do sistema em construção e validação semanal.",
+        titulo: "No marco do núcleo",
+        desc: "R$ 6.000, com o cadastro de passageiro e motorista já funcionando no sistema.",
       },
       {
         percentual: "3ª",
@@ -127,7 +127,7 @@ export const highclass = {
     mensalidade: {
       titulo: "R$ 600 por mês, a partir da entrega",
       texto:
-        "A mensalidade só começa a ser cobrada após a entrega do sistema. Cobre hospedagem, manutenção, correções, pequenos ajustes e suporte direto comigo. Durante o período de pagamento do setup, vocês pagam apenas as parcelas do projeto; nada além disso.",
+        "A mensalidade só começa a ser cobrada após a entrega do sistema. Cobre hospedagem, manutenção, correção de bugs e suporte direto comigo. Não inclui novas funcionalidades, que entram como uma fase seguinte orçada à parte. Durante o período de pagamento do setup, vocês pagam apenas as parcelas do projeto; nada além disso.",
     },
   },
 

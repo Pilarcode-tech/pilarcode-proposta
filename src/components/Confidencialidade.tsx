@@ -33,10 +33,11 @@ export default function Confidencialidade() {
               Propriedade Intelectual
             </h3>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Após a quitação integral do projeto, todo o código-fonte, documentação
-              técnica e artefatos produzidos serão de propriedade exclusiva do
-              cliente. A Pilarcode reserva-se o direito de utilizar o projeto como
-              referência em portfólio, mediante autorização prévia.
+              O cliente recebe o direito de uso pleno e exclusivo do sistema
+              entregue. A propriedade intelectual do código-fonte, arquitetura e
+              componentes de base permanece com a Pilarcode, que concede ao cliente
+              licença de uso para a operação contratada. Eventual cessão do
+              código-fonte pode ser negociada à parte.
             </p>
           </div>
         </div>
