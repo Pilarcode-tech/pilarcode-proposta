@@ -104,24 +104,19 @@ export const highclass = {
   investimento: {
     valor: "R$ 18.000",
     descricao:
-      "Setup do projeto, da Fase 1 à Fase 3, pago em 3 parcelas de R$ 6.000: entrada na assinatura, segunda parcela ao atingir o marco do núcleo (cadastro de passageiro e motorista funcionando) e terceira na entrega.",
+      "Setup do projeto, da Fase 1 à Fase 3, pago em 2 parcelas de R$ 9.000: 50% na assinatura e 50% na entrega.",
     justificativa:
       "O valor cobre as três fases do projeto: a imersão e o desenho a partir da planilha que vocês já usam, a construção do núcleo (cadastros de passageiro, motorista, rota e veículo, indicação por link, orçamento, pagamento online e contrato digital) e a entrega, com a ponte da associação, a migração dos dados da planilha atual, os ajustes finais, o go-live e o treinamento da equipe. O trabalho começa na semana seguinte à assinatura. O controle de embarque e o rastreamento do veículo ficam como fases futuras, orçadas à parte depois que este núcleo estiver rodando.",
     parcelas: [
       {
-        percentual: "1ª",
+        percentual: "50%",
         titulo: "Na assinatura",
-        desc: "R$ 6.000 de entrada; o trabalho começa já na semana seguinte.",
+        desc: "R$ 9.000 de entrada; o trabalho começa já na semana seguinte.",
       },
       {
-        percentual: "2ª",
-        titulo: "No marco do núcleo",
-        desc: "R$ 6.000, com o cadastro de passageiro e motorista já funcionando no sistema.",
-      },
-      {
-        percentual: "3ª",
+        percentual: "50%",
         titulo: "Na entrega",
-        desc: "R$ 6.000, com o sistema no ar e a equipe treinada.",
+        desc: "R$ 9.000, com o sistema no ar e a equipe treinada.",
       },
     ],
     mensalidade: {

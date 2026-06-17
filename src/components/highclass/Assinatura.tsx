@@ -23,7 +23,7 @@ export default function Assinatura() {
               <strong className="text-gray-700">{highclass.clienteCurto}</strong>{" "}
               concorda com os termos, valores e condições descritos acima. O
               projeto tem início após a confirmação do aceite e o pagamento da
-              entrada (primeira de três parcelas).
+              entrada (50% na assinatura).
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
